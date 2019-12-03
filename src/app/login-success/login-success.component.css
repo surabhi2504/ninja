@@ -1,0 +1,117 @@
+@import url(https://fonts.googleapis.com/css?family=Exo:100,200,400);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+
+body{
+	margin: 0;
+	padding: 0;
+	background: #fff;
+
+	color: #fff;
+	font-family: Arial;
+	font-size: 12px;
+}
+
+.body{
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	right: -40px;
+	bottom: -40px;
+	width: auto;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: center-top;
+	background-image: url("../../assets/img/homeLoan2.jpg");
+	background-size: cover;
+	/* -webkit-filter: blur(5px); */
+  z-index: 0;
+  background-position: center;
+ 
+  
+}
+
+
+  
+   .homePage{
+    position: absolute;
+    top: calc(50% - 75px);
+    left: calc(50% - 50px);
+    height: 150px;
+    width: 350px;
+    padding: 10px;
+    z-index: 2;
+  }
+  .homePage input[type=text]{
+    width: 250px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.6);
+    border-radius: 2px;
+    color: #fff;
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 4px;
+  }
+  .homePage input[type=button]{
+    width: 260px;
+    height: 35px;
+    background: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+    border-radius: 2px;
+    color: #a18d6c;
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 6px;
+    margin-top: 10px;
+    
+  }
+  
+  
+  .homePage input[type=button]:hover{
+    opacity: 0.8;
+  }
+  
+  .homePage input[type=button]:active{
+    opacity: 0.6;
+  }
+  
+  .homePage input[type=text]:focus{
+    outline: none;
+    border: 1px solid rgba(255,255,255,0.9);
+  }
+  
+  
+  
+  .homePage input[type=button]:focus{
+    outline: none;
+  }
+  
+  /* Position text in the middle of the page/image */
+  
+::-webkit-input-placeholder{
+  color: rgba(255,255,255,0.6);
+}
+
+::-moz-input-placeholder{
+  color: rgba(255,255,255,0.6);
+}
+
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  
+}

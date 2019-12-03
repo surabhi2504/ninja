@@ -1,0 +1,41 @@
+<div class=body align="top-left">
+<app-header></app-header>
+
+<div class="bg-text">
+<div class= "homepage" align= "center">
+<form [formGroup] = "interfacePage">
+    <div class="admin" *ngIf="value_Admin">
+<input type="button" id="uploadLoc" value={{uploadLocation}} (click)="toggle()"><br>
+<ng-container *ngIf = "show" class="form-group" id="upload1">
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1"><i class="fa fa-paperclip"></i></span>
+        </div>
+
+
+        <input #myInput formControlName="profileImage" class="form-control" type="file" (change)="selectFile($event)">   
+        <div class="input-group-append">
+                
+           
+        </div>
+    </div>
+    <br>
+    
+    <div id="responsevalue">{{ responsemessage }}</div>
+
+        </ng-container>
+        <input type="button" id="uploadDoc" value="uploadDoc" (click)="Upload(file)"><br>
+</div>
+
+<div class="user" *ngIf="value_User">
+<h4>View Applicant status</h4>
+<input type="text" formControlName="mobNumber" name="mobNumber" maxlength="10" placeholder="mobNumber" /><br>
+<input type="button" id="Apply" value="Apply for Home Loan" (click)="Apply()"><br></div>
+<div class="loan" *ngIf="value_Loan">
+<input type="button" id="respond" value="Respond to Applications" (click)="respond()"><br>
+<input type="button" id="docUploadedApp" value="Documents Uploaded Applications" (click)="docUploadedApp()"><br></div>
+<div class="senior" *ngIf="value_Senior"><input type="button" id="dashboard" value="Dashboard" (click)="dashboard()"></div>
+</form>
+</div>
+</div>
+</div>

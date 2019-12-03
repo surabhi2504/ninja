@@ -1,0 +1,29 @@
+
+<div class=body align="top-left">
+        <div class="grad"></div>
+		<div class="header">
+      <div><b>Ninja<span>Finance</span></b></div>
+		</div>
+        <br>
+        <div class="login">
+    <form [formGroup]="loginForm">
+        
+                <input type="text" formControlName="username" name="username" placeholder="username" /><br>
+            
+        
+        
+           
+                <input  type="password" formControlName="password" name="password" placeholder="password" /><br>
+            
+        
+        <input type="button" id="login" value="login" (click)="login()">
+        <div class="invalid" *ngIf="isValidated">
+                <p>Invalid user</p>
+            </div>
+      
+        
+       
+    </form>
+</div>
+</div>
+
